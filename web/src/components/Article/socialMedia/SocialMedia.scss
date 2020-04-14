@@ -1,0 +1,51 @@
+@import './../../../styles/globals';
+@import './../../../styles/breakpoints';
+            
+.article_social-media{
+
+    .article__author--social-container {
+
+        .article__author--social-media {
+            padding: 0;
+            display: flex;
+            align-self: center;
+            justify-content: flex-end;
+
+            @media(min-width: $tablet-portrait) {
+                justify-content: center;
+            }
+
+            .article__fill_details{
+                margin: 0 16px;
+                font-size: $default-fontSize;
+                color: $gray;
+                text-transform: uppercase;
+                line-height: 1.7;
+                letter-spacing: 1.25px;
+                align-items: center;
+                justify-content: center;
+                @extend .article__text-style;
+                display: none;
+                
+                @media(min-width: $tablet-landscape),
+                (min-width: $tablet-portrait),
+                (min-width: $desktop){
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                }
+            }
+
+            .article_social_share-links {
+                list-style: none;
+
+                .article_social_links-img{
+                    width: 40px;
+                    object-fit: cover;
+                    object-fit: center;
+                }
+            }
+        }
+    }
+
+}

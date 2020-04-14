@@ -1,0 +1,99 @@
+{
+    "identityPoolName": "kiwijournalist7c209d12_identitypool_7c209d12",
+    "allowUnauthenticatedIdentities": false,
+    "openIdLambdaRoleName": "kiwijo7c209d12_openid_lambda_role",
+    "resourceNameTruncated": "kiwijo7c209d12",
+    "userPoolName": "kiwijournalist7c209d12_userpool_7c209d12",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "kiwijo7c209d12_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "kiwijo7c209d12_totp_lambda_role",
+    "userpoolClientLambdaRole": "kiwijo7c209d12_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "kiwijournalist7c209d12",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "usernameAttributes": [
+        "email"
+    ],
+    "additionalQuestions": [],
+    "hostedUIDomainName": "kiwijournalist7c209d12-7c209d12",
+    "newCallbackURLs": [
+        "http://localhost:3000/"
+    ],
+    "newLogoutURLs": [
+        "http://localhost:3000/out/"
+    ],
+    "authProvidersUserPool": [
+        "Facebook",
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "dependsOn": [],
+    "AllowedOAuthFlows": [
+        "code"
+    ],
+    "AllowedOAuthScopes": [
+        "phone",
+        "email",
+        "openid",
+        "profile",
+        "aws.cognito.signin.user.admin"
+    ],
+    "CallbackURLs": [
+        "http://localhost:3000/"
+    ],
+    "LogoutURLs": [
+        "http://localhost:3000/login/"
+    ],
+    "googleAuthorizeScopes": [
+        "openid email profile"
+    ],
+    "updateFlow": "providers",
+    "EditURLS": [],
+    "addCallbackOnUpdate": false,
+    "addLogoutOnUpdate": false,
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/login/\"]}"
+}

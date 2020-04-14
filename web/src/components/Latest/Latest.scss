@@ -1,0 +1,23 @@
+@import '../../styles/globals';
+@import '../../styles/breakpoints';
+
+.news {
+  padding: 20px;
+
+  .news__latest {
+    grid-area: latest;
+  }
+
+  .news__popular {
+    grid-area: popular;
+  }
+  @media (min-width: $tablet-landscape) {
+    display: grid;
+    grid-gap: 2.5em;
+    grid-template-areas: 'latest popular';
+  }
+  @media (min-width: $desktop) {
+    grid-gap: 5em;
+    padding: 20px 10%;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "auth": {
+        "kiwijournalist7c209d12": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    }
+}

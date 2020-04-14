@@ -1,0 +1,94 @@
+@import '../../../styles/globals';
+@import '../../../styles/breakpoints';
+
+.popular {
+  height: fit-content;
+
+  .popular__header {
+    border-bottom: 2px solid $light-gray;
+    color: $secondary-color;
+    font-family: $body-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: .83px;
+    line-height: normal;
+    margin: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+
+  .popular__articles-grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 104px auto;
+    grid-template-rows: repeat(3, auto);
+    padding: 18px 0 0;
+    width: fit-content;
+
+    .grid__article-thumbnail {
+      height: 86px;
+      width: 104px;
+      @media(min-width: $tablet-landscape) {
+        height: 132px;
+        margin: 0;
+        width: 228px;
+	  }
+      @media(min-width: $desktop) {
+        height: 156px;
+        margin: 0;
+        width: 270px;
+      }	  
+    }
+
+    .grid__article-description {
+      width: auto;
+
+      .article-description__title {
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: .75px;
+        line-height: 1.22;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        width: auto;
+        @media (min-width: $tablet-portrait) {
+          margin-bottom: 0;
+          margin-top: 10px;
+		}
+    }
+
+      .article-description__author {
+        color: $secondary-color;
+        font-family: $body-font;
+        font-size: 14px;
+        font-weight: normal;
+        @media(min-width: $tablet-portrait) {
+          margin-bottom: 5px;
+        }
+        @media(min-width: $tablet-landscape) {
+          font-size: 12px;
+          margin: 0 0 40px 0;
+          padding: 0;
+        }
+      }
+      @media(min-width: $tablet-landscape) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    @media(min-width: $tablet-landscape) {
+      grid-gap: 1em;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(200px auto);
+      width: 228px;
+	}
+    @media (min-width: $desktop) {
+      width: 270px;
+	}
+  }
+}

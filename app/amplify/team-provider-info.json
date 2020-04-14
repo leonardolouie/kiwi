@@ -1,0 +1,25 @@
+{
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "kiwijournalist-test-20190806134642-authRole",
+            "UnauthRoleArn": "arn:aws:iam::860713519107:role/kiwijournalist-test-20190806134642-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::860713519107:role/kiwijournalist-test-20190806134642-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "kiwijournalist-test-20190806134642-deployment",
+            "UnauthRoleName": "kiwijournalist-test-20190806134642-unauthRole",
+            "StackName": "kiwijournalist-test-20190806134642",
+            "StackId": "arn:aws:cloudformation:us-east-2:860713519107:stack/kiwijournalist-test-20190806134642/66155330-b80d-11e9-81ad-0a768148c3d2"
+        },
+        "categories": {
+            "auth": {
+                "kiwijournalist7c209d12": {
+                    "facebookAppIdUserPool": "641214269689727",
+                    "facebookAppSecretUserPool": "7c40ae9055599a36f7dbb0eaf19b025b",
+                    "googleAppIdUserPool": "408694155460-jl09rtdek7tb6bgsaao004a8qlmuo8kn.apps.googleusercontent.com",
+                    "googleAppSecretUserPool": "L9o6MaWypMsABvaCGvO9wluf",
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"641214269689727\",\"client_secret\":\"7c40ae9055599a36f7dbb0eaf19b025b\"},{\"ProviderName\":\"Google\",\"client_id\":\"408694155460-jl09rtdek7tb6bgsaao004a8qlmuo8kn.apps.googleusercontent.com\",\"client_secret\":\"L9o6MaWypMsABvaCGvO9wluf\"}]"
+                }
+            }
+        }
+    }
+}

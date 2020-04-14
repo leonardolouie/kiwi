@@ -1,0 +1,70 @@
+@import './../../../styles/globals';
+@import './../../../styles/breakpoints';
+
+.article_author--social-share {
+    
+    @media (min-width: $tablet-portrait),
+    (min-width: $tablet-landscape) ,
+    (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article__author--details{
+
+        @media (min-width: $tablet-portrait),
+        (min-width: $tablet-landscape),
+        (min-width: $desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 0;
+            font-size: $default-fontSize;
+        }
+
+        .article_author--container{
+            display: flex;
+            align-items: center;
+            
+            @media (min-width: $tablet-portrait),
+            (min-width: $tablet-landscape) {
+                margin-left: 0;
+                margin-right: 6px;
+            }
+
+            .article__author--name {
+                
+                p {
+                    font-family: $title-font;
+                    font-weight: 500;
+                    font-size: $default-fontSize;
+                    color: $black;
+                    letter-spacing: 1px;
+                    margin: 0 auto;
+                    @extend .article__text-style;
+
+                }
+            }
+        }
+
+    }
+    
+    .article__social-share{
+        float: right;
+        display: none;
+
+        .article__fill_details{
+            display: none;
+        }
+
+        @media(min-width: $tablet-landscape),
+        (min-width: $tablet-portrait),
+        (min-width: $desktop){
+            display: block;
+        }
+    }
+
+
+
+
+}

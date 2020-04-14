@@ -1,0 +1,101 @@
+@import '../../../../styles/globals';
+@import '../../../../styles/breakpoints';
+
+.single-content {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: 'image body';
+  grid-template-columns: 104px auto;
+  padding: 20px 0;
+  @media (min-width: $tablet-portrait) {
+    grid-auto-columns: max-content;
+    padding: 32px 0;
+  }
+  @media (min-width: $tablet-landscape) {
+	grid-template-columns: auto;
+    grid-template-areas:
+    'image'
+    'body';
+    padding: 0;
+  }
+
+  .single-content__image {
+    grid-area: image;
+    height: 81px;
+    width: 104px;
+    @media (min-width: $tablet-landscape) {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .single-content__text {
+
+    &-title {
+      color: $primary-color;
+      font-family: $title-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: .75px;
+      line-height: 1.22;
+      margin: 0;
+      padding: 0 0 4px;
+      @media (min-width: $tablet-landscape) {
+        color: $primary-color;
+        font-family: $title-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: .83px;
+        line-height: 1.18;
+      }
+    }
+
+    &-paragraph {
+      display: none;
+      width: 100%;
+      @media (min-width: $tablet-landscape) {
+        color: $gray;
+        display: inline;
+        font-family: $body-font;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: .44px;
+        line-height: 1.39;
+        text-align: justify;
+      }
+    }
+
+    &-author {
+      color: $secondary-color;
+      font-family: $body-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: .75px;
+      line-height: normal;
+      margin: 0;
+      text-transform: uppercase;
+
+      &-hours {
+        display: none;
+      }
+      @media (min-width: $tablet-landscape) {
+        color: $secondary-color;
+        font-family: $body-font;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: .75px;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &_hours {
+          display: inline;
+        }
+      }
+    }
+  }
+}

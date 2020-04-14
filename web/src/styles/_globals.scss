@@ -1,0 +1,41 @@
+$primary-color: #292929;
+$secondary-color: #515050;
+$light-color: rgba(41, 41, 41, .2);
+$black: #000;
+$white: #fff;
+$dirty-white: #dadada;
+$light-gray: #ebebeb;
+$gray: #747373;
+
+
+
+$title-font: 'Roboto Bold';
+$body-font:  'Roboto Regular';
+$header-font: 'PlayfairDisplay Black';
+
+$gray-light: #747373;
+$gray: #515050;
+$black: #292929;
+$white: #fff;
+
+
+$header-fontSize: 34px;
+$excerpt-fontSize: 24px;
+$large-fontSize: 20px;
+$default-fontSize: 16px;
+$small-fontSize: 14px;
+$xsmall-fontSize: 12px;
+
+$article-font: Georgia, 'Times New Roman', Times, serif;
+
+.article__text-style {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.article__fill_details {
+  color: $gray-light;
+  display: inline-block;
+  margin: 0 6px 0 0;
+}

@@ -1,0 +1,97 @@
+@import '../../../styles/globals';
+@import '../../../styles/breakpoints';
+
+.headline {
+  .headline__image {
+    grid-area: image;
+    height: auto;
+    width: 100%;
+
+    &-owner {
+      color: $secondary-color;
+      font-family: $body-font;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: .63px;
+      line-height: normal;
+      margin: 0;
+      opacity: .6;
+      text-align: center;
+      @media (min-width: $tablet-landscape) {
+        text-align: left;
+	  }
+    }
+  }
+
+  .headline__title {
+    color: $primary-color;
+    font-family: $header-font;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    grid-area: title;
+    letter-spacing: 1.75px;
+    line-height: 1.21;
+    margin: 0;
+    padding: 10px 0 0;
+    @media (min-width: $tablet-landscape) {
+      font-size: 48px;
+      padding: 10px 0 0 9%;
+	}
+    @media (min-width: $desktop) {
+      font-size: 57px;
+      padding: 10px 0 0 8%;
+	}
+  }
+
+  .headline__article {
+    grid-area: article;
+
+    &-text {
+      color: $secondary-color;
+      font-family: $body-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: .5px;
+      line-height: 1.44;
+      margin: 0;
+      padding: 20px 0 10px;
+      @media (min-width: $tablet-landscape) {
+        font-size: 14px;
+        padding: 20px 0;
+	  }
+      @media (min-width: $desktop) {
+        font-size: 16px;
+	  }
+    }
+
+    &-author {
+      border-bottom: 2px solid $light-gray;
+      color: $secondary-color;
+      font-family: $body-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: .88px;
+      line-height: 2.43;
+      margin: 0 0 40px;
+      padding: 0 0 20px;
+      text-transform: uppercase;
+      @media (min-width: $tablet-landscape) {
+        border: 0;
+        margin: 0;
+        padding: 0;
+	  }
+    }
+  }
+  @media (min-width: $tablet-landscape) {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+    'title article'
+    'image image';
+    grid-template-columns: 70% 30%;
+  }
+}

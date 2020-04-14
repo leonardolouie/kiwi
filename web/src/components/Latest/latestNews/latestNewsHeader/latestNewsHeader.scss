@@ -1,0 +1,16 @@
+@import '../../../../styles/globals';
+@import '../../../../styles/breakpoints';
+
+
+.title {
+  border-bottom: 2px solid $light-gray;
+  color: $secondary-color;
+  font-family: $body-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: .83px;
+  line-height: normal;
+  padding: 10px 0;
+  text-transform: uppercase;
+}

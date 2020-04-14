@@ -1,0 +1,211 @@
+@import '../../styles/globals';
+@import '../../styles/breakpoints';
+
+.category-container {
+  padding: 20px;
+
+  .category-header {
+    border-bottom: 2px solid $light-gray;
+    margin: 0;
+    padding: 16px 0;
+
+    &-text {
+      color: $secondary-color;
+      font-family: $body-font;
+      font-size: 20px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: bolder;
+      height: 26px;
+      letter-spacing: .83px;
+      line-height: normal;
+      margin: 0 0 11px;
+      width: 108px;
+      @media(min-width: $tablet-portrait) {
+        font-size: 20px;
+        width: 96px;
+      }
+      @media(min-width: $tablet-landscape) {
+        font-size: 20px;
+        width: 108px;
+      }
+      @media(min-width: $desktop) {
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .see-more-link {
+    color: $secondary-color;
+    float: right;
+    font-family: $body-font;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: .83px;
+    line-height: normal;
+    margin: 4px 0 0;
+    width: 86px;
+    @media(min-width: $tablet-portrait) {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    @media(min-width: $tablet-landscape) {
+      font-size: 16px;
+      height: 19px;
+      letter-spacing: 1px;
+    }
+    @media(min-width: $desktop) {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .category-line {
+    border: solid 1px $light-color;
+    height: .3px;
+    margin-bottom: 22px;
+    margin-left: 15px;
+    margin-right: 31px;
+    width: 330px;
+    @media(min-width: $tablet-portrait) {
+      width: 738px;
+    }
+    @media(min-width: $tablet-landscape) {
+      margin-bottom: 28px;
+      margin-right: 305px;
+      width: 703px;
+    }
+    @media(min-width: $desktop) {
+      margin: 0 472px 33px 136px;
+      width: 832px;
+    }
+  }
+
+  .category-item-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template: repeat(4, auto) / 100%;
+    padding: 20px 0;
+    @media(min-width: $tablet-landscape) {
+      grid-gap: 2em;
+    }
+
+    .category-item-photo {
+      float: left;
+      height: 80px;
+      width: 105px;
+      @media(min-width: $tablet-portrait) {
+        height: 81px;
+        width: 104px;
+      }
+      @media(min-width: $tablet-landscape) {
+        height: 180px;
+        width: 227px;
+      }
+      @media(min-width: $desktop) {
+        height: 214px;
+        width: 268px;
+      }
+    }
+
+    .category-item-title {
+      color: $primary-color;
+      font-family: $title-font;
+      font-size: 18px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: 500;
+      height: auto;
+      letter-spacing: .83px;
+      line-height: 1.22;
+      margin: 0 0 0 120px;
+      width: 200px;
+      @media(min-width: $tablet-portrait) {
+        font-size: 18px;
+        letter-spacing: .75px;
+        width: 608px;
+      }
+      @media(min-width: $tablet-landscape) {
+        font-size: 23.7px;
+        letter-spacing: 1.17px;
+        line-height: 35px;
+        margin-left: 250px;
+        width: 650px;
+      }
+      @media(min-width: $desktop) {
+        font-size: 28px;
+        letter-spacing: 1.17px;
+        line-height: 35px;
+        margin: 0 0 16px 300px;
+        width: 850px;
+      }
+    }
+
+    .category-item-description {
+      color: $gray;
+      display: none;
+      font-family: $body-font;
+      font-size: 13.5px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      height: 46px;
+      margin: 7px 0 11px 24px;
+      width: 450px;
+      @media(min-width: $tablet-landscape) {
+        display: inline-block;
+      }
+      @media(min-width: $desktop) {
+        font-size: 16px;
+        letter-spacing: .5px;
+        line-height: 23px;
+        margin: 0 0 0 28px;
+      }
+    }
+
+    .category-item-author {
+      color: $secondary-color;
+      font-family: $body-font;
+      font-size: 14px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: .75px;
+      line-height: normal;
+      margin: 0 0 0 120px;
+      @media(min-width: $tablet-landscape) {
+        font-size: 11.8px;
+        letter-spacing: .88px;
+        margin-left: 250px;
+      }
+      @media(min-width: $desktop) {
+        font-size: 14px;
+        margin-left: 300px;
+      }
+	}
+
+    .category-item-timestamp {
+      color: $primary-color;
+      display: none;
+      font-family: $body-font;
+      font-size: 11.8px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: .75px;
+      line-height: normal;
+      @media(min-width: $tablet-landscape) {
+        display: inline-block;
+      }
+      @media(min-width: $desktop) {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (min-width: $desktop) {
+    padding: 20px 10%;
+  }
+}

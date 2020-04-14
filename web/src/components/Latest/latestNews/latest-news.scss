@@ -1,0 +1,25 @@
+@import '../../../styles/globals';
+@import '../../../styles/breakpoints';
+
+.latest-news {
+
+  .latest-news__header {
+    grid-area: header;
+  }
+
+  .latest-news__single-content {
+    grid-area: single;
+  }
+
+  .latest-news__multiple-content {
+    grid-area: multiple;
+  }
+  @media (min-width: $tablet-landscape) {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+    'header header'
+    'single multiple';
+    grid-template-columns: 60% 40%;
+  }
+}
